@@ -42,6 +42,7 @@ gem 'better_errors', '~> 2.4'
 gem 'bulma-rails', '~> 0.6.2'
 gem 'simple_form'
 
+
 group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
