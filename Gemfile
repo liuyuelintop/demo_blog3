@@ -7,7 +7,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
 
-# Use Puma as the app server
+# Use Puma as the app server 
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'bundler'
+gem 'mysql2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -43,6 +44,8 @@ gem 'simple_form'
 
 
 group :development, :test do
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3', '1.3.13'
